@@ -9,7 +9,11 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}\\main.go"
+            "preLaunchTask": "go: build (debug)",
+            "program": "${workspaceFolder}",
+            "args": [
+                "-c /some/config/file.yaml"
+            ]
         }
     ]
 }
